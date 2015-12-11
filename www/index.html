@@ -12,9 +12,10 @@
     </head>
     <body ng-app='phoneApp'>
       <h1>Hello?</h1>
+       <input type="number" ng-model="time" placeholder="vibrate time(in seconds)">
       <div ng-controller='testCtrl'>
-        Number is {{number}}
-      <button ng-click="vibrate()">
+        Vibrating for {{time}} seconds
+      <button ng-click="vibrate(time)">
         Vibrate
       </button>
       </div>
